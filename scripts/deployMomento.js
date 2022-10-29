@@ -11,6 +11,10 @@ async function main() {
   await momento.deployed();
 
   console.log("Momento contract deployed: ", momento.address);
+
+  await momento.connect(owner).mint(owner.address, "https://avatars.githubusercontent.com/u/31248306?v=4")
+
+  console.log("Momento minted");
 }
 
 main()
