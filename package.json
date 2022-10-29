@@ -20,6 +20,7 @@
     "ethers": "^5.1.0",
     "hardhat": "^2.1.2",
     "hardhat-gas-reporter": "^1.0.4",
+    "nft.storage": "^7.0.0",
     "openzeppelin-solidity": "^4.2.0",
     "solhint": "^3.3.6",
     "solidity-docgen": "^0.5.13",

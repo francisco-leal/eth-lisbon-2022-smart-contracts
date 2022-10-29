@@ -41,7 +41,6 @@ contract Momento is ERC721, ERC721Enumerable, AccessControl {
 
     function tokenURI(uint256 tokenId) public view virtual override returns (string memory) {
         require(_exists(tokenId), "ERC721Metadata: URI query for nonexistent token");
-        require(ownerOf(tokenId) == msg.sender, "Address is not allowed to view metadata");
 
         string memory uri = _tokenURIs[tokenId];
 
